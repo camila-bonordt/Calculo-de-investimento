@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Investimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>Calculadora de Investimento</h2>
+
+        <label for="investment">Investimento por mês (R$): </label>
+        <input type="number" id="investment" placeholder="Informe o valor">
+
+        <label for="duration">Duração do investimento:</label>
+        <input type="radio" name="duration" value="months" checked> Meses
+        <input type="radio" name="duration" value="years"> Anos
+
+        <label for="time">Tempo de investimento: </label>
+        <input type="number" id="time" placeholder="Informe o tempo">
+
+        <label for="cdi">Taxa CDI (%): </label>
+        <input type="number" id="cdi" placeholder="Informe a taxa CDI">
+
+        <button onclick="calculateInvestment()">Calcular</button>
+
+        <div id="result" class="result-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
